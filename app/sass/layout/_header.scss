@@ -1,0 +1,116 @@
+.header {
+  height: 115vh;
+  background-image: url("../images/hero-img.jpg");
+  background-position: right;
+  background-size: cover;
+
+  .wrapper {
+    padding-top: 72px;
+  }
+  
+  &__main-heading {
+    max-width: 500px;
+    padding-top: 100px;
+    font-family: $second-font-light;
+    font-size: 60px;
+    color: $primary-text-color;
+    line-height: 72px;
+    text-align: left;    
+  }
+
+  &__shape-left {
+    margin: 3% 0;
+  }
+
+  &__text {
+    max-width: 600px;
+    padding-top: 18px;
+    font-family: $primary-extra-light;
+    font-size: 20px;
+    color: $primary-text-color;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  &__btn {
+    background-color: $yellow-color;
+    color: $navy-color;
+  }
+
+  &__chevron-down {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-right: 1px solid $primary-text-color; 
+    border-bottom:1px solid $primary-text-color;
+    transform: rotate(45deg);
+    
+    &--yellow {
+      border-color: $yellow-color;
+      margin-bottom: -11px;
+    }
+    
+  }
+
+  &__shape-right {    
+    position: absolute;   
+    right: 0;
+    top: 760px;
+    width: 355px;
+    &:after {
+      height: 141px;
+      left: 82px;
+    }
+    
+  }
+
+  &__socials {
+    position: absolute;
+    right: 50px;
+    bottom: -85px;
+  }
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    width: 370px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  &__item {
+    font-family: $primary-font-bold;
+    font-size: 14px;
+    color: $primary-text-color;
+    border-bottom: 1px solid rgba(242, 194, 0, 0);
+   
+    &:hover {
+      border-bottom: 1px solid rgba(242, 194, 0, 1);
+      transition: 0.3s;
+    }
+  }
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: -2%;
+  padding-bottom: 43px;
+  &__text {
+    font-family: $primary-extra-bold;
+    color: $primary-text-color;
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: -25px;
+
+  }
+}

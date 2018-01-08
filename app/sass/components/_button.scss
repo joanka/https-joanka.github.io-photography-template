@@ -1,11 +1,11 @@
-.button {
+.btn {
     display: inline-block;
-    width: 140px;
-    margin: 60px 6px;
-    padding: 8px 0;
-    border-radius: 4px;
+    width: 221px;
+    height: 60px;
+    margin: 50px 0;
+    line-height: 60px;
+    border-radius: 50px;
     text-align: center;
-    text-transform: uppercase;
-    font-family: $primary-font-bold;
-    font-size: 12px;
+    font-family: $primary-font;
+    font-size: 16px;
 }
