@@ -1,11 +1,11 @@
-// COLORS
+/* COLORS */
 $primary-text-color: rgba(255, 255, 255, 0.9);
 $grey-text-color: #595666;
 $navy-color: #2b2d5c;
 $yellow-color: #f2c200;
 $light-color: #f7f7fc;
 
-//FONTS
+/* FONTS */
 $primary-font: 'Muli-Regular';
 $primary-font-bold: 'Muli-SemiBold';
 $primary-extra-bold: 'Muli-Black';
@@ -44,7 +44,8 @@ $second-font-light: 'Trirong-Light';
     src: url("../fonts/Trirong-Light.ttf");
 }
 
-//LINKS
+/* LINKS */
+
 a {
     color: inherit;
     font-family: $primary-font; 
@@ -52,7 +53,7 @@ a {
     cursor: pointer;
 }
 
-//HIDE
+ /* https://github.com/h5bp/html5-boilerplate/blob/4ded8b5ce09d2b665e5893945b29d8d626691086/dist/css/main.css#L135-L145 */
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
