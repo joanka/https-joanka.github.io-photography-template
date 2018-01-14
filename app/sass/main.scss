@@ -1,8 +1,12 @@
 @import "base/reset";
 @import "base/variables";
 @import "base/helpers";
+@import "base/mixins";
 
 @import "components/button";
-@import "components/typography";
+@import "components/headings";
+@import "components/socials";
+@import "components/shapes";
 
 @import "layout/header";
+@import "layout/about";

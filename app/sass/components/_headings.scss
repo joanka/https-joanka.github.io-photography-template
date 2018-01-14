@@ -1,0 +1,35 @@
+.section-heading {
+    font-family: $second-font;
+    font-size: 40px;
+
+    &--primary {
+        color: $navy-color;
+    }
+
+    &--secondary {
+        color: $primary-text-color;
+    }
+}
+
+.section-info {
+    margin-top: 20px;
+    font-family: $primary-font-light;
+    font-size: 16px;
+    color: $grey-text-color;
+}
+
+@media (max-width: 864px) {
+    .section-heading {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 530px) {
+    .section-heading {
+        font-size: 24px;
+    }
+    .section-info {
+        margin-top: 15px;
+    }
+
+}

@@ -9,7 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-   <header class="header">
+   <header class="header section" id="home">
        <div class="wrapper">
            <nav class="nav">
                <a href="/" class="logo"><img class="logo__img" src="./images/logo.png" alt="logo">
@@ -20,35 +20,67 @@
                     <span class="nav-toggler__label visuallyhidden">open/close menu</span>
                 </button>
                <ul class="nav__list">
-                   <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                   <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                   <li class="nav__item"><a href="#" class="nav__link">Clients</a></li>
-                   <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
-                   <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                   <li class="nav__item"><a href="#home" class="nav__link nav__link--active">Home</a></li>
+                   <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                   <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+                   <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                   <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
                </ul>
                <div class="nav__overlay"></div>
            </nav>
-           <div class="shape header__shape-left"></div>           
+           <div class="line-shape header__line-shape--left"></div>           
            <h2 class="header__main-heading">Hello, I'm <br/> Dakota Jhonson</h2>
            <p class="header__text">I'm an Art Director & Photographer based in the San Francisco.</p>
            <a href="#" class="btn header__btn">See My Works</a>
-           <div class="header__chevron-down header__chevron-down--yellow"></div>
-           <div class="header__chevron-down"></div>
+           <a href="#about" class="header__chevron">
+                <div class="header__chevron-down header__chevron-down--yellow"></div>
+                <div class="header__chevron-down"></div>
+           </a>         
            <span class="visuallyhidden">Facebook</span>
-           <div class="shape header__shape-right"></div>
+           <div class="line-shape header__line-shape--right"></div>           
            <div class="socials header__socials">
-                <span class="icon fa-facebook" aria-hidden="true"></span>
-                <span class="visuallyhidden">Facebook</span>
-                <span class="icon fa-twitter" aria-hidden="true"></span>
-                <span class="visuallyhidden">Twitter</span>
-                <span class="icon fa-instagram" aria-hidden="true"></span>
-                <span class="visuallyhidden">Instagram</span>
-                <span class="icon fa-flickr" aria-hidden="true"></span>
-                <span class="visuallyhidden">Flickr</span>
+                <a href="#" class="icon fa-facebook" aria-hidden="true"></a>
+                <a href="#" class="visuallyhidden">Facebook</a>
+                <a href="#" class="icon fa-twitter" aria-hidden="true"></a>
+                <a href="#" class="visuallyhidden">Twitter</a>
+                <a href="#" class="icon fa-instagram" aria-hidden="true"></a>
+                <a href="#" class="visuallyhidden">Instagram</a>
+                <a href="#" class="icon fa-flickr" aria-hidden="true"></a>
+                <a href="#" class="visuallyhidden">Flickr</a>
            </div>
-        
+           <span class="square header__square--bottom-left"></span>
+           <span class="square header__square--bottom-right"></span>                           
        </div>
    </header>
+   <main>
+        <section class="about section" id="about">                
+            <div class="about__column-left left-column">
+                <img class="about__img" src="./images/about-main.jpg" alt="about-me" title="about-me">
+                <span class="square about__square--top-right"></span>
+            </div>
+            <div class="about__column-right right-column">
+                <h2 class="section-heading section-heading--primary"> About MySelf </h2>
+                <p class="section-info section-info--primary"> Hey, thanks for stopping by. My name’s Dakota Jhonson junior and I’m a briliant Art Director and pro Photographer based in the San Francisco where I make cool things for agencies and brands around globe. Mentas is loaded with useful features, each one with its own meaningful purpose. We listen to our users and integrate their feature requests on a regular basis. If you like my work then please do not  hesitate to reach out. </p>
+                <h3 class="about__heading-small">What I do</h3>
+                <div class="about__img-container">
+                    <div class="about__img-box">
+                        <p class="about__header-img">fashion</p>
+                        <img class="about__img-small" src="./images/fashion-img.jpg" alt="Fashion">
+                    </div>                           
+                    <div class="about__img-box">
+                        <p class="about__header-img">portraits</p>
+                        <img class="about__img-small" src="./images/portraits-img.jpg" alt="Fashion">
+                    </div>                           
+                    <div class="about__img-box">
+                        <p class="about__header-img">lifestyle</p>
+                        <img class="about__img-small" src="./images/lifestyle-img.jpg" alt="Fashion">
+                    </div>                                                    
+                </div>
+                <a href="#" class="btn about__btn">View my flickr profile</a>          
+            </div>            
+        </section>
+   </main>
+   
    <script src="js/index.js"></script>
 </body>
 </html>

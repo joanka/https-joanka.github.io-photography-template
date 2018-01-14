@@ -1,11 +1,23 @@
 .btn {
+    z-index: 10;
     display: inline-block;
-    width: 221px;
-    height: 60px;
+    width: 200px;
+    height: 51px;
     margin: 50px 0;
-    line-height: 60px;
+    line-height: 51px;
     border-radius: 50px;
     text-align: center;
     font-family: $primary-font;
-    font-size: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: $yellow-color;
+    color: $navy-color;
+
+    @include button-bg($yellow-color);
+}
+
+@media (max-width: 854px) {
+    .btn {
+        font-size: 13px;
+    }
 }

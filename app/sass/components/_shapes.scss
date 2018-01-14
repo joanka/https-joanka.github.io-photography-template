@@ -1,0 +1,56 @@
+.line-shape {
+    position: relative;
+      background: $primary-text-color;
+      width: 124px;
+      height: 1px;    
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: $primary-text-color;
+        width: 1px;
+        height: 124px;
+        top: -62px;
+        left: 62px;
+    }
+}
+
+.square {
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    background: rgba(255, 255, 255, 0.2);
+
+    &:before {
+        content: '';
+        width: 69px;
+        height: 79px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.05);  
+    }
+
+    &:after {
+        content: '';
+        width: 79px;
+        height: 54px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.1);
+    }   
+}
+  
+@media (max-width: 854px) {
+    .square {
+        width: 49px;
+        height: 49px;
+
+        &:before {
+            width: 42px;
+            height: 49px;
+        }
+
+        &:after {
+            width: 49px;
+            height: 33px;
+        }
+    }
+}

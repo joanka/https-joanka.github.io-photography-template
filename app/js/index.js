@@ -1,4 +1,6 @@
 (function() {
+	'use strict';
+
 	var button = document.querySelector('.nav-toggler');
 	var overlay = document.querySelector('.nav__overlay');
 	var nav = document.querySelector('.nav__list');
@@ -14,4 +16,6 @@
         overlay.classList.toggle( 'overlay-open' );
 	}, false);
 
+
 }());
+

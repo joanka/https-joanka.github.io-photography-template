@@ -45,7 +45,6 @@ $second-font-light: 'Trirong-Light';
 }
 
 /* LINKS */
-
 a {
     color: inherit;
     font-family: $primary-font; 
@@ -53,16 +52,13 @@ a {
     cursor: pointer;
 }
 
- /* https://github.com/h5bp/html5-boilerplate/blob/4ded8b5ce09d2b665e5893945b29d8d626691086/dist/css/main.css#L135-L145 */
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
+.nav__link--active {
+    border-bottom: 1px solid rgba(242, 194, 0, 1);
+    transition: 0.3s;
+    padding-bottom: 5px;
 }
+
+ 
+
+
 

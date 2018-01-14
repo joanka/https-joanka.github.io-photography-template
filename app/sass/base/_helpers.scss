@@ -9,40 +9,26 @@
   }
 }
 
-.shape {
-  position: relative;
-    background: $primary-text-color;
-    width: 124px;
-    height: 1px;    
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      background: $primary-text-color;
-      width: 1px;
-      height: 124px;
-      top: -62px;
-      left: 62px;
-    }
+.left-column {
+  width: 40vw;
 }
 
-.socials {
-  .icon {
-    font-family: FontAwesome;
-    font-size: 24px;
-    color: $primary-text-color;
-    padding-right: 20px;
-  }
-  .fa-facebook:before {
-    content: "\f09a";    
-  }
-  .fa-twitter:before {
-    content: "\f099";    
-  }
-  .fa-instagram:before {
-    content: "\f16d";    
-  }
-  .fa-flickr:before {
-    content: "\f16e";    
-  }
+.right-column {
+  width: 60vw;
 }
+
+/* https://github.com/h5bp/html5-boilerplate/blob/4ded8b5ce09d2b665e5893945b29d8d626691086/dist/css/main.css#L135-L145 */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+
+

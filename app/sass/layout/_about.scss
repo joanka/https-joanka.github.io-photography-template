@@ -1,0 +1,145 @@
+.about {
+    display: flex;
+    padding-top: 90px;
+    background: $light-color;
+
+    &__column-left { 
+        position: relative;           
+        padding-right: 60px;
+    }
+
+    &__img {        
+        max-width: 100%;
+        max-height: 100%; 
+    }
+    
+    &__square--top-right {
+        top: 0;
+        right: 60px;
+        background: rgba(255, 255, 255, 0.8);
+
+        &:before {
+            top: 79px;
+            right: 0;
+            background: rgba(77, 64, 124, 0.8);
+        }
+        
+        &:after {
+            top: 0;
+            right: 79px;
+            background: rgba(44, 46, 93, 0.8);
+        }
+    }
+
+    &__column-right { 
+        max-width: 729px;           
+        padding: 45px 60px;
+    }        
+    
+    &__heading-small {
+        padding-top: 20px;
+        font-family: $second-font-light; 
+        font-size: 26px;
+        color: $navy-color;
+    }
+
+    &__img-container  {
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    &__img-box {
+        padding-top: 15px;
+    }
+
+    &__header-img {
+        text-transform: uppercase;
+        font-family: $primary-font-bold;
+        color: $grey-text-color;
+        padding-bottom: 15px;
+    }
+
+    &__img-small {
+        width: 130px;
+        height: 120px;
+    } 
+
+    &__btn {
+        width: 240px;
+        background: $navy-color;
+        color: $primary-text-color;
+
+        @include button-bg($navy-color);
+    }          
+}
+
+@media (max-width: 1024px) {
+
+    .about {
+        &__column-left {          
+            padding-right: 20px;
+        }
+
+        &__square--top-right {
+            right: 20px;
+        }
+
+        &__column-right {           
+            padding: 10px 30px;
+        }
+    }
+}
+
+@media (max-width: 854px) {
+
+    .about {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+
+        &__column-left { 
+            padding: 0;           
+        } 
+
+        &__square--top-right {
+            right: 0;
+
+            &:before {
+                top: 49px;
+            }
+            
+            &:after {
+                right: 49px;
+            }
+        }
+
+        &__column-right { 
+            width: 100%;           
+            padding: 25px 60px;
+        } 
+
+        &__heading-small {
+            padding: 20px 0 10px;
+            font-size: 24px;
+        }
+
+        &__btn {
+            width: 200px;
+        }   
+    }
+}
+
+@media (max-width: 560px) {
+
+    .about {
+        &__img-container  {
+            flex-direction: column;
+            align-items: center;
+        } 
+    }
+}
+
+
+
+

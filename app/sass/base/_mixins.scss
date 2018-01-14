@@ -1,0 +1,12 @@
+@mixin button-bg($bg) {
+    background: $bg;
+
+    &:hover {
+      background: lighten($bg,10%);
+      transition: all 0.3s ease;
+    }
+
+    &:active {
+      background: lighten($bg,13%);
+    } 
+  }
