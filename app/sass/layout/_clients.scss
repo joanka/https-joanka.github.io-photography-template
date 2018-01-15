@@ -1,0 +1,58 @@
+.clients {
+    background-image: url("../images/testimonial-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+    .wrapper {
+        text-align: center;
+        padding: 45px 0;
+    }
+
+    &__logo-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }    
+}
+
+@media (max-width: 1200px) {
+    .clients {
+
+        &__logo-box {
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px 50px;
+        }
+
+        &__logo {
+            width: 230px;
+            
+        }
+    }
+}
+
+@media (max-width: 854px) {
+    .clients {
+        margin: 0;
+
+        &__img {
+            width: 50%;
+            height: 50%;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .clients {
+        
+        &__logo-box {
+            padding: 10px 20px;
+        }
+
+        &__logo {
+            width: 120px;            
+        }
+    }
+}
