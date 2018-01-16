@@ -15,7 +15,14 @@
     margin-top: 20px;
     font-family: $primary-font-light;
     font-size: 16px;
-    color: $grey-text-color;
+
+    &--primary {
+        color: $grey-text-color;
+    }
+
+    &--secondary {
+        color: $navy-color;
+    }
 }
 
 @media (max-width: 864px) {
