@@ -1,17 +1,18 @@
 .line-shape {
     position: relative;
-      background: $primary-text-color;
-      width: 124px;
-      height: 1px;    
-      &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        background: $primary-text-color;
-        width: 1px;
-        height: 124px;
-        top: -62px;
-        left: 62px;
+    background: $primary-text-color;
+    width: 124px;
+    height: 1px; 
+       
+    &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: $primary-text-color;
+    width: 1px;
+    height: 124px;
+    top: -62px;
+    left: 62px;
     }
 }
 

@@ -47,9 +47,9 @@
         display: flex;
         flex-direction: column;
         width: 35%;
-       
-        img {
-            padding-bottom: 25px;
+
+        .portfolio__project {
+            margin-bottom: 25px;
         }
     }
 
@@ -58,8 +58,8 @@
         flex-wrap: wrap;
         width: 65%;
         
-        img {
-            padding: 0 0 25px 25px;
+        .portfolio__project {
+            margin: 0 0 25px 25px;
         }
     }
 
@@ -67,8 +67,89 @@
         display: flex;
     }
 
+
+    &__project {
+        position: relative; 
+        
+        &:hover .portfolio__info {
+            opacity: 1;
+        }
+    
+        &:hover .portfolio__img {
+            width: 94%;
+            height: 94%;
+            margin: 3%;
+        }
+
+        &:hover .portfolio__img-box--last {
+            max-height: 199px;
+        }
+
+        &:hover .portfolio__info {
+            width: 94%;
+            height: 94%;
+            margin: 3%;           
+        }
+
+        &:hover .portfolio__info--small {
+            height: 90%;            
+        } 
+    }
+
+    &__img-box {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
     &__img {
-        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+    }
+
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 55px;
+        background: rgba(43, 45, 92, 0.65);
+        opacity: 0;
+
+        &--big {
+            padding-top: 160px;
+        }
+
+        .portfolio__line-shape {
+            display: inline-block;
+            margin-bottom: 3.5vw;
+            width: 50px;
+
+            &:after {
+                height: 50px;
+                top: -25px;
+                left: 25px;
+                background: $yellow-color;
+            }
+        }
+
+        .portfolio__socials-box {
+            text-align: center;
+        }
+
+        .portfolio__socials {
+            padding-top: 0.8vw;
+        }
+
+        .icon {
+            font-size: 20px;
+            padding: 8px;
+        }
     }
 
     &__btn {
@@ -77,20 +158,135 @@
         color: $yellow-color;
         margin-top: 1.5vw;
         margin-left: 6vw;
+
+        &:hover {
+            color: $navy-color;
+        }
     }
 
     &__line-shape--right {
         width: 254px;
         height: 2px;
         margin-left: 50vw;
+        margin-top: 5vw;
         background: $navy-color;
         transform: rotateX(180deg);
 
         &:after {
             background: $navy-color;
-            height: 313px;
+            height: 284px;
             width: 2px;
             left: 127px;
         }
     }
 }
+
+@media (max-width: 1300px) {
+    .portfolio {
+        &__line-shape--right {
+            width: 170px;
+            margin-left: 52vw;
+    
+            &:after {
+                height: 200px;
+                left: 85px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .portfolio__info {
+        padding-top: 1vw;
+
+        &--big {
+            padding-top: 7vw;
+        }
+    }
+
+    .portfolio__line-shape {
+        display: none;
+        width: 0;
+        height: 0;
+
+        &:after {
+            display: none;
+        }
+    }    
+}
+
+  @media (max-width: 854px) {
+
+      .portfolio {
+        flex-direction: column;
+        text-align: center;
+
+        &__column-left {
+            padding: 10vw 10vw;
+            width: 100vw;
+            background: $light-color;
+            
+            &:after {
+                display: none;
+            }
+        }
+
+        &__column-right {
+            width: 100vw;
+            background: $light-color;
+        }
+    
+        &__border-left {
+            display: none;
+        }
+
+        &__projects {
+            flex-direction: column;
+        }
+
+        &__projects-left {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 25px;
+            
+        }
+    
+        &__projects-right {
+            display: flex;
+            width: 100vw;
+            max-width: 700px;
+            margin: 0 auto;
+            padding-right: 25px;
+        }
+
+        &__projects-nested {
+            width: 100%;
+            justify-content: center;
+        }
+
+        &__project--small {
+            height: 100%;
+            margin-left: 25px;
+            margin-top: 10vw;
+        }
+
+        &__line-shape--right {
+            display: none;
+            height: 0;
+            width: 0;
+        }
+
+        &__socials-box {
+            padding-top: 7vw;
+        }
+
+        .portfolio__info--big {
+            .portfolio__socials-box {
+                padding-top: 12vw;
+            }
+        }
+      }
+  }
