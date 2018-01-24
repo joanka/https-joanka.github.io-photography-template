@@ -4,7 +4,7 @@
   background-position: right;
   background-size: cover;
 
-  .wrapper {
+  .header-wrapper {
     padding-top: 72px;
   }
   
@@ -156,7 +156,7 @@
 }
 
 @media (max-width: 1200px) {
-  .wrapper {
+  .header-wrapper {
     padding: 0 40px;
   }
 }
@@ -164,7 +164,7 @@
 @media (max-width: 854px) {
   .header {
 
-    .wrapper {
+    .header-wrapper {
       padding-top: 30px;
     }
 

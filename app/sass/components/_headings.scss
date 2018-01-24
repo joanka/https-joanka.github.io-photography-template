@@ -15,6 +15,7 @@
     margin-top: 20px;
     font-family: $primary-font-light;
     font-size: 16px;
+    line-height: 28px;
 
     &--primary {
         color: $grey-text-color;
@@ -29,12 +30,14 @@
     .section-heading {
         font-size: 26px;
     }
+
+    .section-info {
+        line-height: 26px;
+    }
 }
 
 @media (max-width: 530px) {
-    .section-heading {
-        font-size: 24px;
-    }
+
     .section-info {
         margin-top: 15px;
     }
