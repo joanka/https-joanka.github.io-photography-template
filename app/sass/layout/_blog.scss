@@ -1,11 +1,13 @@
 .blog {
     height: 113vh;
+    min-height: 800px;
     background: $light-color;
     padding-top: 40px;
     margin-bottom: 175px;
 
-    .wrapper {
-        max-width: 1600px;
+    .blog-wrapper {
+        max-width: 1400px;
+        padding: 20px 30px;
     }
 
     &__posts {
@@ -17,11 +19,12 @@
             z-index: 10;
             content: '';
             position: absolute;
-            right: -42px;
+            right: -41px;
             top: 60px;
-            width: 67vw;
+            width: 64.5vw;
             height: 634px;
             border: 3px solid $primary-text-color;
+            border-right: 3px solid transparent;
         }
     }
 }
@@ -29,7 +32,7 @@
 .post {
     z-index: 20;
     max-width: 450px;
-    padding: 0 20px;
+    padding: 0 28px;
     
     .blog-header {
         text-align: center;
@@ -106,6 +109,8 @@
 
 @media (max-width: 1075px) {
     .post {
+        padding: 0 20px;
+
         .blog-header {
 
             &__header {
@@ -133,6 +138,7 @@
     .blog {
         height: 100%;
         padding-top: 0;
+        margin-bottom: 0;
 
         &__posts {
             flex-direction: column;
@@ -146,7 +152,7 @@
     }
 
     .post {
-        max-width: 80vw;
+        max-width: 85vw;
         margin: 7px auto;
         padding-bottom: 7vw;
         text-align: center;

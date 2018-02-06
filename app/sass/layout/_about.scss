@@ -1,7 +1,7 @@
 .about {
     display: flex;
     padding-top: 90px;
-    background: $light-color;
+    background: linear-gradient($light-color 94%, #fff 6%);
 
     &__column-left { 
         position: relative;           
@@ -34,6 +34,10 @@
     &__column-right { 
         max-width: 729px;           
         padding: 45px 60px;
+
+        .section-info {
+            margin-top: 15px;
+        }
     }        
     
     &__heading-small {
@@ -74,8 +78,9 @@
 }
 
 @media (max-width: 1024px) {
-
     .about {
+        background: $light-color;
+
         &__column-left {          
             padding-right: 20px;
         }
@@ -91,7 +96,6 @@
 }
 
 @media (max-width: 854px) {
-
     .about {
         text-align: center;
         flex-direction: column;
@@ -131,7 +135,6 @@
 }
 
 @media (max-width: 560px) {
-
     .about {
         &__img-container  {
             flex-direction: column;

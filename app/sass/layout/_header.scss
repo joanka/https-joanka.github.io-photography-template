@@ -1,8 +1,10 @@
 .header {
   height: 100vh;
+  min-height: 700px;
+  position: relative;
   background-image: url("../images/hero-img.jpg");
   background-position: right;
-  background-size: cover;
+  background-size: cover; 
 
   .header-wrapper {
     padding-top: 72px;
@@ -57,7 +59,7 @@
   &__line-shape--right {    
     position: absolute;   
     right: 0;
-    top: 650px;
+    bottom: 79px;
     width: 355px;
     &:after {
       height: 141px;
@@ -279,6 +281,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    min-height: 400px;
     background: rgba(43, 45, 92, 0.9);
     animation: menu 0.5s;
   }

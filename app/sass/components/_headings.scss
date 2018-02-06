@@ -26,6 +26,27 @@
     }
 }
 
+.footer-heading {
+    font-family: $primary-font-light;
+    font-size: 24px;
+    color: $primary-text-color;
+
+    &--bold {
+        font-family: $primary-font-bold;
+        font-size: 20px;
+    }
+}
+
+.footer-info {
+    font-family: $primary-font-light;
+    font-size: 14px;
+    color: $primary-text-color;
+
+    &--bold {
+        font-family: $primary-font-bold;
+    }
+}
+
 @media (max-width: 864px) {
     .section-heading {
         font-size: 26px;

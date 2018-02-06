@@ -96,7 +96,7 @@
         <section class="portfolio section" id="portfolio">
             <div class="portfolio__column-left">
                 <h2 class="section-heading section-heading--primary">Portfolio</h2>
-                <p class="portfolio-info section-info section-info--secondary">The point of using Lorem Ipsum is that it has a non  more-or-less  dik sonormal distri bution of letters, as cliper opposed. a closer look to our fully furnished and beautiful demos, which can be use easily On this find website you can find some pictures I've taken during my travel. a clo look to our fully furnished and so beautful demos, which can be use.</p>
+                <p class="portfolio-info section-info section-info--secondary">The point of using Lorem Ipsum is that it has a non  more-or-less  dik sonormal distri bution of letters, as cliper opposed. a closer look to our fully furnished and beautiful demos, which can be use easily. a clo look to our fully furnished and so beautful demos, which can be use.</p>
                 <a href="#" class="portfolio-cta section-info section-info--secondary">Read More...</a>
             </div>
             <div class="portfolio__column-right">                
@@ -256,7 +256,7 @@
             </div>
         </section>
         <section class="blog" id="blog">
-            <div class="wrapper">
+            <div class="wrapper blog-wrapper">
                 <div class="blog__posts">
                     <article class="post">
                         <img class="post__img" src="./images/post-1.jpg" alt="">
@@ -295,7 +295,87 @@
                 </div>
             </div>
         </section>
-      
+        <footer id="contact">
+            <div class="footer-form">
+                <h2 class="section-heading section-heading--secondary">Let's work?</h2>
+                <form action="/send" method="POST" class="message-form">                        
+                    <input class="message-form__input message-form__elem message-elem__input--error" type="text" id="name" name="name" placeholder="*Your name" >
+                    <input class="message-form__input message-form__elem message-elem__input--error" type="text" id="email" name="email" placeholder="*Your email">
+                    <textarea class="message-form__text message-form__elem message-elem__text--error" name="massage" id="message" rows="3" placeholder="*Your message"></textarea>
+                    <button class="btn message-form__action-btn" type="submit">send message</button>
+                </form>
+            </div>
+            <div class="footer-wrapper">
+                <div class="footer-address footer-wrapper__column" aria-label="How to contact us?">
+                    <a href="/" class="footer-logo logo"><img class="logo__img" src="./images/logo.png" alt="logo">
+                    <p class="logo__text"> PHOTOGRAPHY </p>
+                    </a>
+                    <h2 class="footer-heading footer-heading--bold">Contact</h2>
+                    <dl class="footer-contact footer-info">
+                        <dt class="footer-contact__method">
+                            <span class="visuallyhidden">Postal address</span>
+                        </dt>
+                        <dd class="footer-contact__value">
+                            237 Church St, San Francisco,<br>
+                            CA 94114, USA
+                        </dd>
+                        <dt class="footer-contact__method">
+                            <span class="visuallyhidden">E-mail</span>
+                        </dt>
+                        <dd class="footer-contact__value">
+                            <a href="nazmulhasanjingar@gmail.com">nazmulhasanjingar@gmail.com</a>
+                        </dd>
+                    </dl>
+                    <div class="footer-socials">
+                        <h2 class="footer-heading footer-heading--bold">Follow me on</h2>
+                        <div class="socials footer-socials__icons">
+                            <a href="#" class="icon fa-facebook" aria-hidden="true"></a>
+                            <a href="#" class="visuallyhidden">Facebook</a>
+                            <a href="#" class="icon fa-twitter" aria-hidden="true"></a>
+                            <a href="#" class="visuallyhidden">Twitter</a>
+                            <a href="#" class="icon fa-instagram" aria-hidden="true"></a>
+                            <a href="#" class="visuallyhidden">Instagram</a>
+                            <a href="#" class="icon fa-flickr" aria-hidden="true"></a>
+                            <a href="#" class="visuallyhidden">Flickr</a>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="footer-posts footer-wrapper__column footer-wrapper__column--large">
+                    <h2 class="footer-heading">Latest Blog Posts</h2>
+                    <article class="footer-post">
+                        <img class="footer-post__img" src="./images/footer-post1.jpg" alt="">
+                        <div class="footer-post__section">
+                            <h3 class="footer-post__title footer-info">Design is the method of putting form and content together .</h3>
+                            <p class="footer-post__category footer-info footer-info--bold">Life style<time datetime="2017-07-03" class="footer-post__time"> - July 3, 2017</time></p> 
+                        </div>                                    
+                    </article>
+                    <article class="footer-post">
+                        <img class="footer-post__img" src="./images/footer-post2.jpg" alt="">
+                        <div class="footer-post__section">
+                            <h3 class="footer-post__title footer-info">Design is the method of putting form and content together .</h3>
+                            <p class="footer-post__category footer-info footer-info--bold">Life style<time datetime="2017-07-03" class="footer-post__time"> - July 3, 2017</time></p>
+                              
+                        </div>                                    
+                    </article>
+                    <a href="#" class="footer-posts__cta footer-heading footer-heading--bold">MORE...</a>
+                </div>
+                <div class="footer-links footer-wrapper__column">
+                    <h2 class="footer-heading">Quick Link</h2>
+                    <ul class="footer-nav footer-heading footer-heading--bold">
+                        <li class="footer-nav__item"><a href="#home" class="footer-nav__link nav__link">Home</a></li>
+                        <li class="footer-nav__item"><a href="#about" class="footer-nav__link nav__link">About</a></li>
+                        <li class="footer-nav__item"><a href="#clients" class="footer-nav__link nav__link">Clients</a></li>
+                        <li class="footer-nav__item"><a href="#portfolio" class="footer-nav__link nav__link">Portfolio</a></li>
+                        <li class="footer-nav__item"><a href="#blog" class="footer-nav__link nav__link">Blog</a></li>
+                    </ul>
+                </div>              
+                <div class="footer-insta footer-wrapper__column">
+                    <h2 class="footer-heading">Instagram Update</h2>
+                    <img class="footer-insta__img" src="./images/insta-img.png" alt="">
+                </div>
+            </div>
+            <p class="footer-copy footer-info">All Rights &copy; 2017 By Nazmul Hasan Jingar</p>
+        </footer>      
    </main>
    
    <script src="js/index.js"></script>

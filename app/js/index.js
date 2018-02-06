@@ -16,6 +16,16 @@
         overlay.classList.toggle( 'overlay-open' );
 	}, false);
 
+	//form
+	var form  = document.querySelector(".message-form");
+	var inputs = document.querySelectorAll('.message-form__elem');
+
+	form.onSubmit = function(e) {
+		e.preventDefault();
+	};
+
 
 }());
+
+
 
