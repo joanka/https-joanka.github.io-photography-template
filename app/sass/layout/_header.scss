@@ -41,7 +41,7 @@
   }
 
   &__chevron-down {
-    position: absolute;
+    position: fixed;
     bottom: 28px;
     left: 50%;
     width: 13px;
@@ -49,6 +49,8 @@
     border-right: 1px solid $primary-text-color; 
     border-bottom:1px solid $primary-text-color;
     transform: rotate(45deg);
+    opacity: 1;
+    transition: all 0.3s ease;
     
     &--yellow {
       border-color: $yellow-color;
@@ -117,7 +119,7 @@
     width: 370px;
     height: 25px;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
   }
 
   &__item {
@@ -165,7 +167,6 @@
 
 @media (max-width: 854px) {
   .header {
-
     .header-wrapper {
       padding-top: 30px;
     }
@@ -237,7 +238,7 @@
     .nav-toggler {
       z-index: 100;
       display: block;
-      position: absolute;
+      position: fixed;
       right: 40px;
       top: 40px;
       height: 35px;
@@ -296,8 +297,9 @@
 
 @media (max-width: 486px) {
   .header {
-
-    .wrapper {
+    min-height: 650px;
+    
+    .header-wrapper {
       padding: 30px 20px;
     }
 
@@ -315,8 +317,9 @@
   }
 
   .nav {
-
+    
     .nav-toggler {
+      margin-top: 50px;
       right: 30px;
       top: 25px;
     }
@@ -324,7 +327,7 @@
 
   .logo {
     margin-left: -8%;
-    margin-top: -8%;
+    margin-top: 20px;
   }
 }
 

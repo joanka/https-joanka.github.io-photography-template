@@ -16,8 +16,33 @@
     @include button-bg($yellow-color);
 }
 
+.btn--top {
+    z-index: 1000;
+    position: fixed;
+    bottom: 58px;
+    right: 50px;
+    width: 50px;
+    height: 53px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 5px;
+    transform: rotate(-90deg);
+    background: rgba(89, 86, 102, 0.5);
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
 @media (max-width: 854px) {
     .btn {
         font-size: 13px;
+    }
+
+    .btn--top {
+        z-index: 1000;
+        bottom: 30px;
+        right: 0px;
+        width: 37px;
+        height: 40px;
     }
 }

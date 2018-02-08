@@ -255,7 +255,7 @@
                 <div class="line-shape portfolio__line-shape--right"></div>                
             </div>
         </section>
-        <section class="blog" id="blog">
+        <section class="blog section" id="blog">
             <div class="wrapper blog-wrapper">
                 <div class="blog__posts">
                     <article class="post">
@@ -295,13 +295,13 @@
                 </div>
             </div>
         </section>
-        <footer id="contact">
+        <footer id="contact" class="section">
             <div class="footer-form">
                 <h2 class="section-heading section-heading--secondary">Let's work?</h2>
                 <form action="/send" method="POST" class="message-form">                        
-                    <input class="message-form__input message-form__elem message-elem__input--error" type="text" id="name" name="name" placeholder="*Your name" >
-                    <input class="message-form__input message-form__elem message-elem__input--error" type="text" id="email" name="email" placeholder="*Your email">
-                    <textarea class="message-form__text message-form__elem message-elem__text--error" name="massage" id="message" rows="3" placeholder="*Your message"></textarea>
+                    <input class="message-form__input message-form__elem message-elem__input--error" type="text" id="name" name="name" placeholder="*Your name" data-error="Please enter a first name">
+                    <input class="message-form__input message-form__elem message-elem__input--error" type="email" id="email" name="email" placeholder="*Your email" data-error="Please enter a valid e-mail address">
+                    <textarea class="message-form__text message-form__elem message-elem__text--error" name="massage" id="message" rows="3" placeholder="*Your message"data-error="Please enter a text message"></textarea>
                     <button class="btn message-form__action-btn" type="submit">send message</button>
                 </form>
             </div>
