@@ -104,7 +104,7 @@
                     <span class="portfolio__border-left"></span>
                     <div class="portfolio__projects-left">
                         <article class="portfolio__project">
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="./images/equipment.png" alt=""></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="./images/equipment.jpg" alt=""></div>
                             <div class="portfolio__info portfolio__info--big">
                                 <div class="line-shape portfolio__line-shape"></div>
                                 <div class="portfolio__socials-box">
@@ -124,7 +124,7 @@
                             </div>
                         </article>
                         <article class="portfolio__project portfolio__project--small">
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="./images/couple.png" alt=""></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="./images/couple.jpg" alt=""></div>
                             <div class="portfolio__info portfolio__info--small">
                                 <div class="line-shape portfolio__line-shape"></div>
                                 <div class="portfolio__socials-box">
@@ -147,7 +147,7 @@
                     <div class="portfolio__projects-right">
                         <div class="portfolio__projects-nested">
                             <article class="portfolio__project">
-                                <div class="portfolio__img-box"><img class="portfolio__img" src="./images/man.png" alt=""></div>
+                                <div class="portfolio__img-box"><img class="portfolio__img" src="./images/man.jpg" alt=""></div>
                                 <div class="portfolio__info portfolio__info--right">
                                     <div class="line-shape portfolio__line-shape"></div>
                                     <div class="portfolio__socials-box">
@@ -167,7 +167,7 @@
                                 </div>
                             </article>
                             <article class="portfolio__project">
-                                <div class="portfolio__img-box"><img class="portfolio__img" src="./images/woman1.png" alt=""></div>
+                                <div class="portfolio__img-box"><img class="portfolio__img" src="./images/woman1.jpg" alt=""></div>
                                 <div class="portfolio__info portfolio__info--right">
                                     <div class="line-shape portfolio__line-shape"></div>
                                     <div class="portfolio__socials-box">
@@ -189,7 +189,7 @@
                         </div>
                         <div class="portfolio__projects-nested">
                             <article class="portfolio__project">
-                                <div class="portfolio__img-box"><img class="portfolio__img" src="./images/violin.png" alt=""></div>
+                                <div class="portfolio__img-box"><img class="portfolio__img" src="./images/violin.jpg" alt=""></div>
                                 <div class="portfolio__info portfolio__info--right">
                                     <div class="line-shape portfolio__line-shape"></div>
                                     <div class="portfolio__socials-box">
@@ -209,7 +209,7 @@
                                 </div>
                             </article>
                             <article class="portfolio__project">
-                                <div class="portfolio__img-box"><img class="portfolio__img" src="./images/woman2.png" alt=""></div>
+                                <div class="portfolio__img-box"><img class="portfolio__img" src="./images/woman2.jpg" alt=""></div>
                                 <div class="portfolio__info portfolio__info--right">
                                     <div class="line-shape portfolio__line-shape"></div>
                                     <div class="portfolio__socials-box">
@@ -298,10 +298,13 @@
         <footer id="contact" class="section">
             <div class="footer-form">
                 <h2 class="section-heading section-heading--secondary">Let's work?</h2>
-                <form action="/send" method="POST" class="message-form">                        
-                    <input class="message-form__input message-form__elem message-elem__input--error" type="text" id="name" name="name" placeholder="*Your name" data-error="Please enter a first name">
-                    <input class="message-form__input message-form__elem message-elem__input--error" type="email" id="email" name="email" placeholder="*Your email" data-error="Please enter a valid e-mail address">
-                    <textarea class="message-form__text message-form__elem message-elem__text--error" name="massage" id="message" rows="3" placeholder="*Your message"data-error="Please enter a text message"></textarea>
+                <form action="/send" method="POST" class="message-form">
+                    <label for="name" class="message-form__label">Name</label> 
+                    <input class="message-form__input message-form__elem" type="text" id="name" name="name" placeholder="*Your name" data-error="Please enter a first name">                   
+                    <label for="email" class="message-form__label">E-mail</label> 
+                    <input class="message-form__input message-form__elem" type="email" id="email" name="email" placeholder="*Your email" data-error="Please enter a valid e-mail address">
+                    <label for="message" class="message-form__label">Message</label> 
+                    <textarea class="message-form__text message-form__elem" name="message" id="message" rows="3" placeholder="*Your message"data-error="Please enter a text message"></textarea>
                     <button class="btn message-form__action-btn" type="submit">send message</button>
                 </form>
             </div>

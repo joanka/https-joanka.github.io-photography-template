@@ -62,8 +62,7 @@
 
 	window.addEventListener('scroll', stickyNavigation);
 
-
-
+	
 
 }());
 

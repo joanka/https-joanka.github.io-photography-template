@@ -38,7 +38,8 @@
   
 }
 
-.fixed-nav nav {
+/* sticky nav */
+.fixed-nav nav{
   z-index: 1100;
   position: fixed;
   top: 0;
@@ -62,7 +63,6 @@
     height: 105px;
   }
 }
-
 
 
 

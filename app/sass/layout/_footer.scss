@@ -12,6 +12,18 @@
 .message-form {
     text-align: center;
 
+    &__label {
+        display: block;
+        font-family: $primary-font-light;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: -10px;
+
+        &:nth-child(1) {
+            padding-top: 20px;
+        }
+    }
+
     &__input,
     &__text {
         display: block;
