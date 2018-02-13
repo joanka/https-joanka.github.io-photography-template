@@ -62,7 +62,85 @@
 
 	window.addEventListener('scroll', stickyNavigation);
 
+	//highlight active links	
+	function highlightLinks() {
+		const section = document.querySelectorAll(".section");
+		const sections = {};
+		let i = 0;
+
+		section.forEach(function(e) {
+			sections[e.id] = e.offsetTop;
+		});
+
+		let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+		for (i in sections) {
+			if (sections[i] <= scrollPosition) {
+				document.querySelector('.nav__link--active').setAttribute('class', 'nav__link');
+				document.querySelector('a[href*=' + i + ']').setAttribute('class', 'nav__link--active');
+			}
+		}
+	}
+
+	window.addEventListener('scroll', highlightLinks);
+
+	//form
+	function isNotEmpty(field) {
+		return field.value !== "";
+	}
+
+	function isEmail(field) {
+		return field.value.indexOf("@") !== -1;
+	}
+
+	function displayErrors(errors) {
+		let ul = document.querySelector("ul.errors");		
+		if(!ul) {
+			ul = document.createElement("ul");
+			ul.classList.add("errors");
+		}
+
+		ul.innerHTML = "";
+
+		errors.forEach(function(error) {
+			const li = document.createElement("li");
+			li.textContent = error;
+			ul.appendChild(li);		});
+
+		form.parentNode.insertBefore(ul, form);		
+	}
+
+	function validateForm(e) {
+		e.preventDefault();
+		const formFields = form.querySelectorAll('.message-form__elem');			
+		const errors =[];
+		let isValid = false;
 	
+		formFields.forEach(function(field) {
+
+			if(field.type === "text" || field.type === "textarea") {
+				isValid = isNotEmpty(field);
+			} else if (field.type === "email") {
+				isValid = isEmail(field);
+			}
+
+			if(!isValid) {
+				errors.push(field.dataset.error);
+				field.classList.add("error");
+			} else {
+				field.classList.remove("error");
+			}
+
+		});
+
+		if(errors.length) {
+			displayErrors(errors);
+		} else {
+			form.submit();
+		}
+	}
+
+	form.addEventListener("submit", validateForm, false);
 
 }());
 

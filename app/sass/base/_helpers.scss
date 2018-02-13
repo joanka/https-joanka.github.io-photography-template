@@ -64,6 +64,18 @@
   }
 }
 
+/* form errors list */
+ul.errors {
+  max-width: 600px;
+  padding: 10px;
+  margin-left: 20px;
+  background-color: transparent;
+}
 
+ul.errors li {
+  list-style: none;
+  line-height: 30px;
+  color: #F70053;
+}
 
 
